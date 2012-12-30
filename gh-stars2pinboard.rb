@@ -13,7 +13,8 @@ Octokit.netrc = true
 
 pinclient = Pinboard::Client.new token: ARGV[0]
 
-starred = Octokit.starred
+octo = Octokit::Client.new auto_traversal: true
+starred = octo.starred
 
 starred.each do |star|
   name = star["name"]
