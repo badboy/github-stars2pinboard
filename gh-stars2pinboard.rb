@@ -11,7 +11,7 @@ require 'pinboard'
 
 Octokit.netrc = true
 
-pinclient = Pinboard::Client.new token: ARGV[1]
+pinclient = Pinboard::Client.new token: ARGV[0]
 
 starred = Octokit.starred
 
