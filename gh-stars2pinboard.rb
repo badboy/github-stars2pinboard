@@ -6,6 +6,7 @@
 # can do whatever you want with this stuff. If we meet some day, and you think
 # this stuff is worth it, you can buy me a beer in return. Jan-Erik Rediger
 
+require 'bundler/setup'
 require 'octokit'
 require 'pinboard'
 require 'digest/sha1'

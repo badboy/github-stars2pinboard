@@ -2,6 +2,13 @@
 
 Save all [starred][] github repos to [Pinboard][] using [octokit][] and the [pinboard gem][].
 
+## Installation
+
+Make soure you have [bundler][] installed.  
+Then just do
+
+    bundle install
+
 ## Usage
 
     ./gh-stars2pinboard.rb [api_token]
@@ -21,3 +28,4 @@ Get your `api_token` on <https://pinboard.in/settings/password>
 [pinboard]: https://pinboard.in/
 [octokit]: https://github.com/pengwynn/octokit
 [pinboard gem]: https://github.com/badboy/pinboard
+[bundler]: http://gembundler.com/

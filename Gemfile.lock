@@ -1,0 +1,37 @@
+GIT
+  remote: git://github.com/badboy/pinboard.git
+  revision: 11927b3b440801abb70a000fa1bfc7230e3208be
+  branch: update
+  specs:
+    pinboard (0.0.4)
+      httparty (= 0.7.8)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.2)
+    crack (0.1.8)
+    faraday (0.8.4)
+      multipart-post (~> 1.1)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    hashie (1.2.0)
+    httparty (0.7.8)
+      crack (= 0.1.8)
+    multi_json (1.5.0)
+    multipart-post (1.1.5)
+    netrc (0.7.7)
+    octokit (1.22.0)
+      addressable (~> 2.2)
+      faraday (~> 0.8)
+      faraday_middleware (~> 0.9)
+      hashie (~> 1.2)
+      multi_json (~> 1.3)
+      netrc (~> 0.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  octokit
+  pinboard!
