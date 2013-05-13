@@ -31,6 +31,7 @@ end
 
 cache_file = File.open(CACHE_FILE, "w")
 i = 1
+uploaded = 0
 total = starred.size
 starred.each do |star|
   name = star["name"]
@@ -52,9 +53,11 @@ starred.each do |star|
       extended:    desc,
       tags:        "githubstars #{lang}"
     })
+    uploaded += 1
   end
 
   puts status
   i += 1
 end
 cache_file.close
+puts "Total of #{uploaded} saved to pinboard."
