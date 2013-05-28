@@ -46,7 +46,7 @@ starred.each do |star|
   if cache.include?(h)
     status = "skipped"
   else
-    status = pinclient.add_post({
+    status = pinclient.add({
       replace:     "no",
       url:         url,
       description: name,
